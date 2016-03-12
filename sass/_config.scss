@@ -1,0 +1,43 @@
+
+/* COLORS */
+
+$color1: #000;
+$color2: #555;
+$color3: #888;
+$color4: #ccc;
+
+$rgba1: rgb(17, 17, 17);
+$rgba2: rgba(17, 17, 17, 0.75);
+$rgba3: rgba(17, 17, 17, 0);
+
+$h1color: $color4;
+$navcolor: $color4;
+$navcolor2: $color3;
+$linkcolor: $color4;
+$footercolor: $color2;
+
+/* TYPOGRAPHY */
+
+$font1: opensansregular, helvetica, arial, sans-serif;
+
+/* SIZES */
+
+$bodysize: 16px;
+
+$size1: 1.5em;
+$size2: 1.2em;
+$size3: 1em;
+$size4: 0.8em;
+
+$h1size: $size2;
+$h2size: $size3;
+$tagsize: $size4;
+$navsize: $size4;
+$buttonsize: $size1;
+$footersize: $size4;
+
+/* MEDIA QUERIES */
+
+$tablet1: "only screen and (min-width: 768px) and (max-width: 999px)";
+$tablet2: "only screen and (min-width: 480px) and (max-width: 767px)";
+$mobile: "only screen and (max-width: 479px)";

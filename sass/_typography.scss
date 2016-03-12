@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'opensansregular';
+  src: url('fonts/OpenSans-Regular-webfont.eot');
+  src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+   url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+   url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+   url('fonts/OpenSans-Regular-webfont.svg#opensansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensansbold';
+  src: url('fonts/OpenSans-Bold-webfont.eot');
+  src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+   url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+   url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+   url('fonts/OpenSans-Bold-webfont.svg#opensansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: $font1;
+  font-size: $bodysize;
+}
+
+h1 {
+  font-family: $font1;
+  font-size: $h1size;
+  color: $h1color;
+}
+
+header h1 {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+header h1 span {
+  padding-left: 1em;
+  color: $color2;
+  font-size: $tagsize;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+nav a {
+  color: $navcolor;
+  font-family: $font1;
+  font-size: $navsize;
+  margin-left: 2em;
+}
+
+header a:hover {
+  color: $navcolor2;
+  transition: 0.3s;
+}
+
+small {
+  display: block;
+  color: $footercolor;
+  font-size: $footersize;
+  margin-top: 1em;
+}

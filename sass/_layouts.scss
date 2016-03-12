@@ -1,0 +1,27 @@
+
+/*
+body {
+  background: url(../images/background-test.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*/
+
+body {
+  background: $rgba1;
+  min-height: 100%;
+  position: absolute;
+}
+
+main {
+  padding-top: 4em;
+  margin-bottom: 3em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
