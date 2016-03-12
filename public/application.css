@@ -122,6 +122,7 @@ body {
 body {
   background: #111111;
   min-height: 100%;
+  width: 100%;
   position: absolute; }
 
 main {
@@ -201,7 +202,8 @@ header {
   top: 0;
   left: 0;
   background: #111111;
-  background: rgba(17, 17, 17, 0.75); }
+  background: rgba(17, 17, 17, 0.75);
+  z-index: 100; }
 
 nav {
   position: absolute;
@@ -218,13 +220,28 @@ footer {
 
 #collections {
   max-width: 1980px;
-  margin: 10em auto 0 auto; }
+  margin: 10em auto; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #collections {
+      max-width: 660px; } }
+  @media only screen and (max-width: 479px) {
+    #collections {
+      width: 100%; } }
 
 #collections a {
   display: block;
   width: 33.33%;
   float: left;
   position: relative; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #collections a {
+      width: 100%; } }
+  @media only screen and (max-width: 479px) {
+    #collections a {
+      width: 100%; } }
+
+#collections img {
+  display: block; }
 
 #collections a div {
   position: absolute;

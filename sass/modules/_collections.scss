@@ -2,7 +2,13 @@
 #collections {
   //width: 960px;
   max-width: 1980px;
-  margin: 10em auto 0 auto;
+  margin: 10em auto;
+  @media #{$tablet2} {
+    max-width: 660px;
+  }
+  @media #{$mobile} {
+    width: 100%;
+  }
 }
 
 #collections a {
@@ -10,6 +16,16 @@
   width: 33.33%;
   float: left;
   position: relative;
+  @media #{$tablet2} {
+    width: 100%;
+  }
+  @media #{$mobile} {
+    width: 100%;
+  }
+}
+
+#collections img {
+  display: block;
 }
 
 #collections a div {
