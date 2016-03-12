@@ -8,10 +8,51 @@ header {
   background: $rgba1;
   background: $rgba2;
   z-index: 100;
+  @media #{$tablet2} {
+    height: 3em;
+  }
+  @media #{$mobile} {
+    height: 3em;
+  }
 }
 
 nav {
   position: absolute;
   top: 1.4em;
   right: 2em;
+}
+
+header h1 {
+  margin-left: 1em;
+  margin-top: 1em;
+  font-weight: 200;
+  letter-spacing: 0.0625em;
+  @media #{$tablet2} {
+    margin-left: 0;
+    text-align: center;
+  }
+  @media #{$mobile} {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+header h1 span {
+  padding-left: 1em;
+  color: $color2;
+  font-size: $tagsize;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: $navcolor;
+  font-family: $font1;
+  font-size: $navsize;
+  margin-left: 2em;
+}
+
+header a:hover {
+  color: $navcolor2;
+  @include transition(0.3s);
 }

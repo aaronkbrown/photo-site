@@ -23,44 +23,26 @@
 body {
   font-family: $font1;
   font-size: $bodysize;
+  @media #{$hires} {
+    font-size:$bodysizehires;
+  }
 }
 
 h1 {
   font-family: $font1;
   font-size: $h1size;
   color: $h1color;
-}
-
-header h1 {
-  margin-left: 1em;
-  margin-top: 1em;
-  font-weight: 200;
-  letter-spacing: 0.0625em;
-}
-
-header h1 span {
-  padding-left: 1em;
-  color: $color2;
-  font-size: $tagsize;
-  letter-spacing: 0.125em;
-  text-transform: uppercase;
+  @media #{$tablet2} {
+    font-size: $h1sizemobile;
+  }
+  @media #{$mobile} {
+    font-size: $h1sizemobile;
+  }
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  @include transition(0.3s);
-}
-
-nav a {
-  color: $navcolor;
-  font-family: $font1;
-  font-size: $navsize;
-  margin-left: 2em;
-}
-
-header a:hover {
-  color: $navcolor2;
   @include transition(0.3s);
 }
 

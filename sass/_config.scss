@@ -23,21 +23,26 @@ $font1: opensansregular, helvetica, arial, sans-serif;
 /* SIZES */
 
 $bodysize: 16px;
+$bodysizehires: 32px;
 
 $size1: 1.5em;
 $size2: 1.2em;
 $size3: 1em;
 $size4: 0.8em;
+$size5: 0.6em;
 
 $h1size: $size2;
 $h2size: $size3;
+$h1sizemobile: $size3;
+$h2sizemobile: $size3;
 $tagsize: $size4;
 $navsize: $size4;
 $buttonsize: $size1;
-$footersize: $size4;
+$footersize: $size5;
 
 /* MEDIA QUERIES */
 
+$hires: "only screen and (min-width: 1981px)";
 $tablet1: "only screen and (min-width: 768px) and (max-width: 999px)";
 $tablet2: "only screen and (min-width: 480px) and (max-width: 767px)";
 $mobile: "only screen and (max-width: 479px)";

@@ -9,6 +9,9 @@ ehthumbs.db
 Thumbs.db
 .sass-cache/
 
-# Pictures
+# Misc
 ####################
 *.jpg
+*.zip
+jasmine/
+SpecRunner.html

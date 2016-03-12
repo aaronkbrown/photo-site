@@ -5,9 +5,11 @@
   margin: 10em auto;
   @media #{$tablet2} {
     max-width: 660px;
+    margin: 7em auto;
   }
   @media #{$mobile} {
     width: 100%;
+    margin: 5em auto;
   }
 }
 
