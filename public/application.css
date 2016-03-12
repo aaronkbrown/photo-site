@@ -158,19 +158,22 @@ header h1 {
   margin-left: 1em;
   margin-top: 1em;
   font-weight: 200;
-  letter-spacing: 1px; }
+  letter-spacing: 0.0625em; }
 
 header h1 span {
   padding-left: 1em;
   color: #555;
   font-size: 0.8em;
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
   text-transform: uppercase; }
 
 a {
   text-decoration: none;
   color: inherit;
-  transition: 0.3s; }
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease; }
 
 nav a {
   color: #ccc;
@@ -180,7 +183,10 @@ nav a {
 
 header a:hover {
   color: #888;
-  transition: 0.3s; }
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease; }
 
 small {
   display: block;
@@ -226,13 +232,19 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  transition: 0.3s;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
   background: #111111;
   opacity: 0; }
 
 #collections a div:hover {
   opacity: 0.85;
-  transition: 0.3s; }
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease; }
 
 #collections div p {
   position: absolute;
@@ -244,6 +256,8 @@ footer {
   transform: translateY(-50%);
   color: #ccc;
   text-transform: uppercase;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  font-weight: 100; }
 
 /*# sourceMappingURL=application.css.map */

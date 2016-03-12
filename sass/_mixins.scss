@@ -14,3 +14,10 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+@mixin transition($duration: 0.3s, $applies: all, $type: ease){
+  transition: $duration $applies $type;
+  -webkit-transition: $duration $applies $type;
+  -moz-transition: $duration $applies $type;
+  -o-transition: $duration $applies $type;
+}
