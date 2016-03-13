@@ -52,3 +52,20 @@ small {
   font-size: $footersize;
   margin-top: 1em;
 }
+
+/* Menu icon glyph with pseudo-element */
+
+.border-menu {
+  position: relative;
+  padding-right: 1.25em;
+}
+.border-menu:after {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double $navcolor;
+  border-bottom: 0.125em solid $navcolor;
+}

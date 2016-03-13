@@ -178,6 +178,21 @@ small {
   font-size: 0.6em;
   margin-top: 1em; }
 
+/* Menu icon glyph with pseudo-element */
+.border-menu {
+  position: relative;
+  padding-right: 1.25em; }
+
+.border-menu:after {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #ccc;
+  border-bottom: 0.125em solid #ccc; }
+
 header {
   width: 100%;
   height: 4em;
@@ -189,15 +204,52 @@ header {
   z-index: 100; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     header {
-      height: 3em; } }
+      height: 16em;
+      top: -12em;
+      transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease; } }
   @media only screen and (max-width: 479px) {
     header {
-      height: 3em; } }
+      height: 16em;
+      top: -12em;
+      transition: 0.3s all ease;
+      -webkit-transition: 0.3s all ease;
+      -moz-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease; } }
 
-nav {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header.active {
+    top: 0;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease; } }
+@media only screen and (max-width: 479px) {
+  header.active {
+    top: 0;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease; } }
+
+header nav {
   position: absolute;
   top: 1.4em;
   right: 2em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    header nav {
+      width: 100%;
+      text-align: center;
+      top: 0;
+      right: 0; } }
+  @media only screen and (max-width: 479px) {
+    header nav {
+      width: 100%;
+      text-align: center;
+      top: 0;
+      right: 0; } }
 
 header h1 {
   margin-left: 1em;
@@ -207,51 +259,114 @@ header h1 {
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     header h1 {
       margin-left: 0;
-      margin-top: 0.8em;
-      text-align: center; } }
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0.8em;
+      letter-spacing: 0.2em; } }
   @media only screen and (max-width: 479px) {
     header h1 {
       margin-left: 0;
-      margin-top: 0.8em;
-      text-align: center; } }
+      margin-top: auto;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0.8em;
+      letter-spacing: 0.2em; } }
 
 header h1 span {
-  padding-left: 1em;
+  padding-left: 1.5em;
   color: #555;
   font-size: 0.8em;
   letter-spacing: 0.25em;
   text-transform: uppercase; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    header h1 span {
+      display: block;
+      padding-left: 0; } }
+  @media only screen and (max-width: 479px) {
+    header h1 span {
+      display: block;
+      padding-left: 0; } }
 
-nav a {
+header nav a {
   color: #ccc;
   font-family: opensansregular, helvetica, arial, sans-serif;
   font-size: 0.8em;
   margin-left: 2em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    header nav a {
+      font-size: 1em;
+      margin-left: 0;
+      display: block;
+      line-height: 2em; } }
+  @media only screen and (max-width: 479px) {
+    header nav a {
+      font-size: 1em;
+      margin-left: 0;
+      display: block;
+      line-height: 2em; } }
 
 #collectionsMenu {
   color: #ccc;
-  width: 8em;
+  width: 6.4em;
   position: absolute;
-  top: 5em;
-  right: 12.1em;
-  padding-left: 1.5em;
-  padding-bottom: 1em;
-  line-height: 2.5em;
+  top: 2.6em;
+  right: 7.7em;
+  padding-left: 1.2em;
+  padding-bottom: 0.8em;
+  line-height: 1.9em;
   background: #111111;
-  background: rgba(17, 17, 17, 0.75);
-  font-size: 0.8em; }
+  background: rgba(17, 17, 17, 0.75); }
 
 #collectionsMenu {
   display: none; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #collectionsMenu {
+      display: block;
+      background: none;
+      position: static;
+      line-height: 2em;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center; } }
+  @media only screen and (max-width: 479px) {
+    #collectionsMenu {
+      display: block;
+      background: none;
+      position: static;
+      line-height: 2em;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center; } }
 
 #collectionsMenu.active {
   display: block; }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #collectionsButton {
+    display: none; } }
+@media only screen and (max-width: 479px) {
+  #collectionsButton {
+    display: none; } }
 
 header li {
   display: block; }
 
 header li:first-child {
-  margin-top: 1em; }
+  margin-top: 0.8em; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    header li:first-child {
+      margin-top: 0; } }
+  @media only screen and (max-width: 479px) {
+    header li:first-child {
+      margin-top: 0; } }
+
+header li a {
+  margin-left: 0; }
 
 header a:hover {
   color: #888;
@@ -260,6 +375,20 @@ header a:hover {
   -webkit-transition: 0.3s all ease;
   -moz-transition: 0.3s all ease;
   -o-transition: 0.3s all ease; }
+
+#mobileMenuToggle {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  bottom: 0;
+  right: 0;
+  display: none; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #mobileMenuToggle {
+      display: block; } }
+  @media only screen and (max-width: 479px) {
+    #mobileMenuToggle {
+      display: block; } }
 
 footer {
   height: 3em;

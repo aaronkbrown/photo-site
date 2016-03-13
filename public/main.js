@@ -3,6 +3,10 @@ $('#collectionsButton').click(function(){
   $('#collectionsMenu').toggleClass('active');
 });
 
+$('#mobileMenuToggle').click(function(){
+  $('#masthead').toggleClass('active');
+});
+
 
 /**
 function toggleClass(classToToggle, toggledElement){
