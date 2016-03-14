@@ -1,6 +1,7 @@
 
 $('#collectionsButton').click(function(){
   $('#collectionsMenu').toggleClass('active');
+  $('#collectionsButton').toggleClass('active');
 });
 
 $('#mobileMenuToggle').click(function(){

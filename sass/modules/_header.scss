@@ -52,7 +52,7 @@ header nav {
 }
 
 header h1 {
-  margin-left: 1em;
+  margin-left: 1.7em;
   margin-top: 1em;
   font-weight: 200;
   letter-spacing: 0.0625em;
@@ -159,6 +159,10 @@ header nav a {
   @media #{$mobile} {
     display: none;
   }
+}
+
+#collectionsButton.active {
+  color: $navcolor2;
 }
 
 header li {
