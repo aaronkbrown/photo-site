@@ -95,6 +95,7 @@
 }
 
 #panel {
+  visibility: hidden;
   position: fixed;
   left: 0;
   right: 0;
@@ -104,11 +105,50 @@
   height: 100%;
   z-index: -1;
   cursor: zoom-out;
+  display: table;
 }
 
 #panel.active {
+  visibility: visible;
   z-index: 101;
   background: $rgba1;
   background: $rgba2;
-  @include transition(0.3s);
+  @include transition(0.3s, background);
+}
+
+#panel #spinner {
+  @include vertical-center(absolute);
+}
+
+#panel #marginal {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 24px;
+  bottom: 24px;
+}
+
+#panel #piccontainer {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 25px;
+}
+
+#display {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20000px;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  visibility: hidden;
+}
+
+#display.active {
+  visibility: visible;
+  top: 0;
 }

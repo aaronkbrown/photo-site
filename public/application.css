@@ -558,6 +558,7 @@ footer {
   font-weight: 100; }
 
 #panel {
+  visibility: hidden;
   position: fixed;
   left: 0;
   right: 0;
@@ -566,15 +567,55 @@ footer {
   width: 100%;
   height: 100%;
   z-index: -1;
-  cursor: zoom-out; }
+  cursor: zoom-out;
+  display: table; }
 
 #panel.active {
+  visibility: visible;
   z-index: 101;
   background: #111111;
   background: rgba(17, 17, 17, 0.75);
-  transition: 0.3s all ease;
-  -webkit-transition: 0.3s all ease;
-  -moz-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease; }
+  transition: 0.3s background ease;
+  -webkit-transition: 0.3s background ease;
+  -moz-transition: 0.3s background ease;
+  -o-transition: 0.3s background ease; }
+
+#panel #spinner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#panel #marginal {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  top: 24px;
+  bottom: 24px; }
+
+#panel #piccontainer {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 25px; }
+
+#display {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20000px;
+  bottom: 0;
+  margin: auto;
+  display: block;
+  visibility: hidden; }
+
+#display.active {
+  visibility: visible;
+  top: 0; }
 
 /*# sourceMappingURL=application.css.map */

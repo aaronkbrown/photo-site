@@ -10,10 +10,17 @@ $('#mobileMenuToggle').click(function(){
 
 $('#pictures a').click(function(){
   $('#panel').toggleClass('active');
+  var imgSrc = $(this).attr('data-src');
+  $('#display').attr('src', imgSrc);
+  $('#display').load(function(){
+    $('#display').addClass('active');
+  });
 });
 
 $('#panel').click(function(){
   $('#panel').toggleClass('active');
+  $('#display').load(null);
+  $('#display').removeClass('active');
 });
 
 
