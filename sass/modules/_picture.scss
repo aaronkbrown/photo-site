@@ -1,9 +1,28 @@
 
+.container {
+  margin: 0 auto;
+  max-width: 1572px;
+  padding-left: 88px;
+  padding-right: 88px;
+  @media #{$tablet2} {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  @media #{$mobile} {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 #pictures {
-  max-width: 1548px;
+  width: 100%;
   margin: 10em auto;
   @media #{$tablet2} {
-    max-width: 660px;
+    max-width: 500px;
     margin: 7em auto;
   }
   @media #{$mobile} {
@@ -22,11 +41,31 @@
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 24px;
+  @media #{$tablet2} {
+    margin: 0 0 24px 0;
+  }
+  @media #{$mobile} {
+    margin: 0 0 24px 0;
+  }
+}
+
+#pictures div {
+  width: 33.333%;
   float: left;
+  @media #{$tablet2} {
+    float: none;
+    width: 100%;
+  }
+  @media #{$mobile} {
+    float: none;
+    width: 100%;
+  }
 }
 
 #pictures a div {
   position: absolute;
+  width: 100%;
+  float: none;
   top: 0;
   bottom: 0;
   left: 0;

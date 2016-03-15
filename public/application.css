@@ -462,12 +462,30 @@ footer {
   letter-spacing: 0.2em;
   font-weight: 100; }
 
+.container {
+  margin: 0 auto;
+  max-width: 1572px;
+  padding-left: 88px;
+  padding-right: 88px; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+      width: 100%;
+      text-align: center; } }
+  @media only screen and (max-width: 479px) {
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+      width: 100%;
+      text-align: center; } }
+
 #pictures {
-  max-width: 1548px;
+  width: 100%;
   margin: 10em auto; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     #pictures {
-      max-width: 660px;
+      max-width: 500px;
       margin: 7em auto; } }
   @media only screen and (max-width: 479px) {
     #pictures {
@@ -482,11 +500,30 @@ footer {
   max-width: 500px;
   margin-left: 12px;
   margin-right: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #pictures a {
+      margin: 0 0 24px 0; } }
+  @media only screen and (max-width: 479px) {
+    #pictures a {
+      margin: 0 0 24px 0; } }
+
+#pictures div {
+  width: 33.333%;
   float: left; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #pictures div {
+      float: none;
+      width: 100%; } }
+  @media only screen and (max-width: 479px) {
+    #pictures div {
+      float: none;
+      width: 100%; } }
 
 #pictures a div {
   position: absolute;
+  width: 100%;
+  float: none;
   top: 0;
   bottom: 0;
   left: 0;
@@ -516,7 +553,7 @@ footer {
   transform: translateY(-50%);
   color: #ccc;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 1em;
   letter-spacing: 0.2em;
   font-weight: 100; }
 
