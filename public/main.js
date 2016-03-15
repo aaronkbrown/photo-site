@@ -8,6 +8,14 @@ $('#mobileMenuToggle').click(function(){
   $('#masthead').toggleClass('active');
 });
 
+$('#pictures a').click(function(){
+  $('#panel').toggleClass('active');
+});
+
+$('#panel').click(function(){
+  $('#panel').toggleClass('active');
+});
+
 
 /**
 function toggleClass(classToToggle, toggledElement){

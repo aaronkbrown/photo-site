@@ -105,7 +105,7 @@ mark {
 /* TYPOGRAPHY */
 /* SIZES */
 /* MEDIA QUERIES */
-.preserve-3d, #collections a div {
+.preserve-3d, #collections a div, #pictures a div {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
@@ -353,7 +353,7 @@ header nav a {
   #collectionsButton {
     display: none; } }
 
-#collectionsButton.active {
+header nav a.active {
   color: #888; }
 
 header li {
@@ -461,5 +461,83 @@ footer {
   font-size: 1.5em;
   letter-spacing: 0.2em;
   font-weight: 100; }
+
+#pictures {
+  max-width: 1548px;
+  margin: 10em auto; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    #pictures {
+      max-width: 660px;
+      margin: 7em auto; } }
+  @media only screen and (max-width: 479px) {
+    #pictures {
+      max-width: 500px;
+      margin: 5em auto; } }
+
+#pictures a, #pictures img {
+  display: block; }
+
+#pictures a {
+  position: relative;
+  max-width: 500px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+  float: left; }
+
+#pictures a div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  background: #111111;
+  opacity: 0; }
+
+#pictures a div:hover {
+  opacity: 0.85;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  cursor: zoom-in; }
+
+#pictures div p {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  font-weight: 100; }
+
+#panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: zoom-out; }
+
+#panel.active {
+  z-index: 101;
+  background: #111111;
+  background: rgba(17, 17, 17, 0.75);
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease; }
 
 /*# sourceMappingURL=application.css.map */
