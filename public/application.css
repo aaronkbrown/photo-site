@@ -164,6 +164,9 @@ h1 {
     h1 {
       font-size: 1em; } }
 
+p {
+  color: #888; }
+
 a {
   text-decoration: none;
   color: inherit;
