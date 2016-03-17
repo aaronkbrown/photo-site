@@ -32,6 +32,7 @@ h1 {
   font-family: $font1;
   font-size: $h1size;
   color: $h1color;
+  font-weight: 200;
   @media #{$tablet2} {
     font-size: $h1sizemobile;
   }
@@ -40,8 +41,18 @@ h1 {
   }
 }
 
+article h1 {
+  margin-bottom: 0.5em;
+}
+
 p {
   color: $pcolor;
+  font-size: $psize;
+}
+
+article p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 a {
@@ -62,6 +73,7 @@ small {
 .border-menu {
   position: relative;
   padding-right: 1.25em;
+  font-size: 1em;
 }
 .border-menu:after {
   content: "";
