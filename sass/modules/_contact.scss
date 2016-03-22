@@ -1,0 +1,48 @@
+
+input {
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  font-size: $inputsize;
+  padding: 0.2em;
+  @media #{$tablet2} {
+    font-size: $inputsizemobile;
+  }
+  @media #{$mobile} {
+    font-size: $inputsizemobile;
+  }
+}
+
+textarea {
+  width: 40em;
+  height: 10em;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  font-size: $inputsize;
+  padding: 0.2em;
+  display: block;
+  @media #{$tablet1} {
+    width: 30em;
+  }
+  @media #{$tablet2} {
+    width: 80%;
+    font-size: $inputsizemobile;
+  }
+  @media #{$mobile} {
+    width: 80%;
+    font-size: $inputsizemobile;
+  }
+}
+
+.inputbutton {
+  width: 4em;
+  margin-right: 1em;
+  float: left;
+  //border-radius: 0.3em;
+  //-webkit-border-radius: 0.3em;
+  //background-color: $buttoncolor;
+}
+
+.inputbutton:active {
+  background-color: $buttoncoloractive;
+}

@@ -21,7 +21,7 @@ main {
   margin-bottom: 3em;
 }
 
-article {
+article, form {
   margin: 4em 20%;
   width: 60%;
   @media #{$tablet2} {
@@ -31,6 +31,13 @@ article {
   @media #{$mobile} {
     margin: 2em 5%;
     width: 90%;
+  }
+}
+
+form {
+  padding-left: 2em;
+  @media #{$tablet1} {
+    padding-left: 0;
   }
 }
 

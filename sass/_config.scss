@@ -5,6 +5,7 @@ $color1: #000;
 $color2: #555;
 $color3: #888;
 $color4: #ccc;
+$color5: #fff;
 
 $rgba1: rgb(17, 17, 17);
 $rgba2: rgba(17, 17, 17, 0.75);
@@ -16,6 +17,7 @@ $navcolor2: $color3;
 $linkcolor: $color4;
 $footercolor: $color2;
 $pcolor: $color3;
+$buttoncoloractive: $color4;
 
 /* TYPOGRAPHY */
 
@@ -45,6 +47,8 @@ $buttonsize: $size1;
 $picturesize: $size3;
 $psize: $size4;
 $footersize: $size6;
+$inputsize: $size3;
+$inputsizemobile: $size5;
 
 /* MEDIA QUERIES */
 
