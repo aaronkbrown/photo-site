@@ -5,12 +5,19 @@ input {
   margin-bottom: 1em;
   font-size: $inputsize;
   padding: 0.2em;
+  color: $inputtext;
+  background-color: $inputcolor;
   @media #{$tablet2} {
     font-size: $inputsizemobile;
   }
   @media #{$mobile} {
     font-size: $inputsizemobile;
   }
+}
+
+input:focus {
+  background-color: $inputcoloractive;
+  color: $inputtextactive;
 }
 
 textarea {
@@ -21,6 +28,8 @@ textarea {
   font-size: $inputsize;
   padding: 0.2em;
   display: block;
+  color: $inputtext;
+  background-color: $inputcolor;
   @media #{$tablet1} {
     width: 30em;
   }
@@ -34,10 +43,17 @@ textarea {
   }
 }
 
+textarea:focus {
+  color: $inputtextactive;
+  background-color: $inputcoloractive;
+}
+
 .inputbutton {
   width: 4em;
   margin-right: 1em;
   float: left;
+  color: $buttontext;
+  background-color: $buttoncolor;
   //border-radius: 0.3em;
   //-webkit-border-radius: 0.3em;
   //background-color: $buttoncolor;

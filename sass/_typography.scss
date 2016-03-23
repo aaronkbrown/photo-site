@@ -62,6 +62,16 @@ a {
   @include transition(0.3s);
 }
 
+p a {
+  font-weight: bold;
+  color: $linkcolortext;
+}
+
+p a:hover {
+  color: $linkcolortextactive;
+  @include transition(0.3s);
+}
+
 small {
   display: block;
   color: $footercolor;

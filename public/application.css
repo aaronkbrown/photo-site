@@ -203,6 +203,17 @@ a {
   -moz-transition: 0.3s all ease;
   -o-transition: 0.3s all ease; }
 
+p a {
+  font-weight: bold;
+  color: #fff; }
+
+p a:hover {
+  color: #ccc;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease; }
+
 small {
   display: block;
   color: #555;
@@ -655,13 +666,19 @@ input {
   margin-top: 0.2em;
   margin-bottom: 1em;
   font-size: 1em;
-  padding: 0.2em; }
+  padding: 0.2em;
+  color: #555;
+  background-color: #ccc; }
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     input {
       font-size: 0.8em; } }
   @media only screen and (max-width: 479px) {
     input {
       font-size: 0.8em; } }
+
+input:focus {
+  background-color: #fff;
+  color: #000; }
 
 textarea {
   width: 40em;
@@ -670,7 +687,9 @@ textarea {
   margin-bottom: 1em;
   font-size: 1em;
   padding: 0.2em;
-  display: block; }
+  display: block;
+  color: #555;
+  background-color: #ccc; }
   @media only screen and (min-width: 768px) and (max-width: 999px) {
     textarea {
       width: 30em; } }
@@ -683,10 +702,16 @@ textarea {
       width: 80%;
       font-size: 0.8em; } }
 
+textarea:focus {
+  color: #000;
+  background-color: #fff; }
+
 .inputbutton {
   width: 4em;
   margin-right: 1em;
-  float: left; }
+  float: left;
+  color: #000;
+  background-color: #fff; }
 
 .inputbutton:active {
   background-color: #ccc; }
