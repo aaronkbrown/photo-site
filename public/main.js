@@ -12,14 +12,17 @@ $('#pictures a').click(function(){
   $('#panel').toggleClass('active');
   var imgSrc = $(this).attr('data-src');
   $('#display').attr('src', imgSrc);
-  $('#display').load(function(){
+  $('#display').on('load', function(){
     $('#display').addClass('active');
   });
 });
 
 $('#panel').click(function(){
   $('#panel').toggleClass('active');
-  $('#display').load(null);
+  $('#display').attr('src', '');
+  $('#display').on('load', function(){
+    $('#display').removeClass('active');
+  });
   $('#display').removeClass('active');
 });
 
