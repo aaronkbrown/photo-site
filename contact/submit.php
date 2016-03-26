@@ -18,7 +18,7 @@ if(isset($_POST['email'])) {
  
         // your error code can go here
         echo "<html>"; 
-        echo "<head><title>David Brown Photography - Contact</title><meta charset='UTF-8'><meta nave='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='/public/application.css'><script src='/public/html5shiv-printshiv.min.js'></script><script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script></head>";
+        echo "<head><title>David Brown Photography - Contact</title><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='stylesheet' href='/public/application.css'><script src='/public/html5shiv-printshiv.min.js'></script><script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script></head>";
         echo "<body><header id='masthead'><h1><a href='/''>David Brown</a><span>Photography</span></h1><nav><a href='/'>Home</a><a id='collectionsButton'>Collections</a><ul id='collectionsMenu'><li><a href='/collection/people'>People</a></li><li><a href='/collection/places'>Places</a></li><li><a href='/collection/things'>Things</a></li></ul><a href='/about'>About</a><a class='active' href='/contact'>Contact</a></nav><div id='mobileMenuToggle'><p class='border-menu'></p></div></header><main><article>";
         echo "<p>We are very sorry, but there were error(s) found with the form you submitted.</p>";
  
@@ -130,7 +130,7 @@ $headers = 'From: '.$email_from."\r\n".
   <head>
     <title>David Brown Photography - Contact</title>
     <meta charset="UTF-8">
-    <meta nave="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/public/application.css">
     <script src="/public/html5shiv-printshiv.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
